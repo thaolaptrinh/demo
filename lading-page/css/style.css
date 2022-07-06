@@ -783,9 +783,6 @@ body::-webkit-scrollbar-thumb:hover {
     grid-template-columns: 1fr;
   }
 }
-.group {
-  overflow: hidden;
-}
 .group-container {
   text-align: center;
 }
@@ -857,7 +854,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--heading-color);
 }
 .price .price-single {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 600;
   color: var(--heading-color);
 }
@@ -899,7 +896,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .manages ul li i {
   margin-right: 10px;
-  color: #feba71;
+  color: var(--primary-color);
 }
 .manages-buttons a {
   margin: 5px;

@@ -43,6 +43,7 @@
     z-index: 10;
     visibility: hidden;
     opacity: 0;
+  
     transition: all 0.3s ease-in;
 
 
@@ -83,6 +84,7 @@
   &-services:hover .sub-menu {
     visibility: visible;
     opacity: 1;
+    
   }
 
   .sub-menu::before {

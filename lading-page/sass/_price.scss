@@ -5,6 +5,7 @@
   &-container {
     text-align: center;
     padding: 10px;
+
   }
 
 
@@ -50,7 +51,7 @@
   }
 
   .price-single {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
     color: var(--heading-color);
   }
@@ -67,7 +68,7 @@
 }
 
 @media screen and (max-width:767.98px) {
-  .price-list{
+  .price-list {
     grid-template-columns: 1fr;
   }
 }

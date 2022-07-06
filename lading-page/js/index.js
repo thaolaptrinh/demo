@@ -6,6 +6,17 @@ const $$ = document.querySelectorAll.bind(document);
 const menu = $(".menu");
 const menuToggle = $(".menu-toggle");
 
+// Wow init
+
+wow = new WOW({
+  boxClass: "wow", // default
+  animateClass: "animated", // default
+  offset: 0, // default
+  mobile: true, // default
+  live: true, // default
+});
+wow.init();
+
 /** Preloader */
 
 setTimeout(function () {
