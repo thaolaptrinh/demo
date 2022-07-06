@@ -1,0 +1,208 @@
+.header {
+  position: relative;
+  background-image: url(../img/header/header-bg-1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--heading-color);
+  }
+
+
+
+
+  &-top {
+    position: relative;
+    min-height: 100px;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+
+
+
+
+  &-content {
+    padding: 50px 0 90px;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+
+  }
+
+  &-login {
+    border: 1px solid #fff;
+    background-color: transparent;
+
+
+
+    &:hover {
+      background-color: #fff;
+      color: var(--main-color-one);
+    }
+
+  }
+
+  &-signup {
+    border: 1px solid #fff;
+    background-color: var(--primary-color);
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+
+
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &-area {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    padding: 10px;
+  }
+
+  &-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+
+  &-title {
+    margin: 30px 0;
+    color: #fff;
+
+  }
+
+  &-subtitle {
+    margin-bottom: 30px;
+    color: #eee;
+
+  }
+
+  &-button {
+    margin-top: 30px;
+
+  }
+
+  &-img {
+    margin-top: 35px;
+  }
+
+
+
+  &-motions {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
+
+  }
+
+  &-motion {
+    justify-self: center;
+    align-self: end;
+  }
+
+  .header-motion--thumb {
+    animation: upDown 5s infinite ease-in-out alternate;
+  }
+
+  .header-motion--start {
+    animation: leftToRight 5s infinite ease-in-out alternate;
+  }
+
+  .header-motion--end,
+  .header-motion--heart {
+    animation: skewRotate 1s infinite linear alternate;
+  }
+
+
+  @keyframes leftToRight {
+    from {
+      transform: translateX(50px);
+    }
+
+    to {
+      transform: translateX(-50px);
+    }
+  }
+
+
+  @keyframes upDown {
+    from {
+      transform: translateY(0px);
+    }
+
+    to {
+      transform: translateY(-50px);
+    }
+  }
+
+
+  @keyframes skewRotate {
+    from {
+      transform: unset;
+    }
+
+    to {
+      transform: rotate(30deg);
+    }
+  }
+
+
+}
+
+
+@media screen and (max-width: 1023.98px) {
+
+  .header-content {
+    padding-top: 100px;
+  }
+
+  .header-area {
+    grid-template-columns: 1fr;
+  }
+
+  .header-motions,
+  .header-motion {
+    display: none;
+  }
+
+
+
+}
+
+
+@media(max-width:500px) {
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .header-buttons {
+    display: none;
+
+
+  }
+}

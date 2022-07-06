@@ -1,0 +1,56 @@
+.group {
+
+  overflow: hidden;
+
+  &-container {
+    text-align: center;
+  }
+
+  &-img {
+    padding-bottom: 70px;
+  }
+
+
+  &-buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+  }
+
+  .button-zalo {
+    border: 1px solid var(--main-color-one);
+    background-color: rgba(2, 1, 1, 0);
+    color: var(--main-color-one);
+
+
+    &:hover {
+      color: #fff;
+      background-color: var(--main-color-one);
+    }
+
+  }
+
+  .button-telegram {
+
+    border: 1px solid var(--primary-color);
+    background-color: rgba(2, 1, 1, 0);
+    color: var(--primary-color);
+
+
+    &:hover {
+      color: #fff;
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+
+@media screen and (max-width:767.98px) {
+  .group-buttons {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}

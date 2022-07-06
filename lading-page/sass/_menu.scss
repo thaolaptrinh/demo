@@ -1,0 +1,181 @@
+.menu {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  color: #fff;
+
+  &-item {
+   line-height: 100px;
+
+  }
+
+  &-item:hover &-link {
+    color: var(--primary-color);
+  }
+
+  &-item i {
+    transition: all 0.2s linear;
+  }
+
+  &-item:hover i {
+    transform: rotate(180deg);
+  }
+
+  &-link {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease-in;
+  }
+
+
+
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    min-width: 200px;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 5%);
+    background-color: #fff;
+    border-bottom: 5px solid var(--primary-color);
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+
+  }
+
+
+  .sub-menu li {
+    display: block;
+    margin-left: 0;
+    line-height: 24px;
+    font-size: var(--small-font-size);
+
+    & :hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  }
+
+
+  .sub-menu li a {
+    display: block;
+    padding: 12px 30px;
+    white-space: nowrap;
+    color: var(--paragraph-color);
+    transition: all 0.3s ease-in;
+
+  }
+
+
+
+  &-support,
+  &-services {
+    position: relative;
+  }
+
+
+  &-support:hover .sub-menu,
+  &-services:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .sub-menu::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-30px);
+    height: 30px;
+    width: 100%;
+  }
+
+
+
+  &-toggle {
+    display: none;
+    font-size: 24px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: var(--primary-color);
+    background-color: #fff;
+  }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 991.98px) {
+  .show-mobile {
+    display: block !important;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    padding: 0 20px;
+    background-color: var(--heading-color);
+    z-index: 100;
+
+
+
+
+    &-toggle {
+      display: block;
+    }
+
+    &-item {
+      display: block;
+      text-align: left;
+      line-height: 30px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+
+      & i {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+
+    .sub-menu {
+      position: initial;
+      display: block;
+      width: 100%;
+      border-top: none;
+      box-shadow: none;
+      margin-left: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      transition: unset;
+
+
+      & li a {
+        color: #fff;
+      }
+
+    }
+
+    li:hover .sub-menu {
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+      border-bottom: none;
+      background-color: transparent;
+    }
+
+
+  }
+}
