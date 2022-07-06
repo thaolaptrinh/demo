@@ -125,7 +125,7 @@ body {
   }
 
   &--primary {
-    font-size: 16px;
+    font-size: 16px !important; 
     padding: 15px 40px;
     background-image: var(--linear-color);
 
@@ -133,7 +133,7 @@ body {
   }
 
   @include maxWidth(1023px) {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 20px;
   }
 }
