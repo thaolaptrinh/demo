@@ -537,7 +537,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media screen and (max-width: 1023.98px) {
   .header-content {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 
   .header-area {
