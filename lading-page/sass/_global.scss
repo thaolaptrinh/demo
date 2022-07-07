@@ -119,23 +119,24 @@ body {
 
   &--secondary {
     padding: 12px 40px;
-    font-size: 14px;
     background-image: var(--linear-color);
 
   }
 
   &--primary {
-    font-size: 16px !important; 
+    font-weight: 600 !important;
+    line-height: 26px;
+    font-size: 16px !important;
     padding: 15px 40px;
     background-image: var(--linear-color);
-
+    box-shadow: -1px 24px 30px 4px rgba(0, 0, 0, 0.18);
 
   }
 
-  @include maxWidth(1023px) {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
+  // @include maxWidth(1023px) {
+  //   font-size: 14px;
+  //   padding: 10px 20px;
+  // }
 }
 
 .heading {

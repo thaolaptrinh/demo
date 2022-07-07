@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  overflow-x: hidden;
+
+}
+
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+}

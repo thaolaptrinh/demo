@@ -21,7 +21,7 @@ wow.init();
 
 setTimeout(function () {
   $("#preloader").style.display = "none";
-}, 1500);
+}, 1000);
 
 /** Handle Show Menu */
 

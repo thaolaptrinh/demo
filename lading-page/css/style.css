@@ -227,19 +227,15 @@ body {
 }
 .button--secondary {
   padding: 12px 40px;
-  font-size: 14px;
   background-image: var(--linear-color);
 }
 .button--primary {
+  font-weight: 600 !important;
+  line-height: 26px;
   font-size: 16px !important;
   padding: 15px 40px;
   background-image: var(--linear-color);
-}
-@media screen and (max-width: 1023px) {
-  .button {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
+  box-shadow: -1px 24px 30px 4px rgba(0, 0, 0, 0.18);
 }
 
 .heading {
@@ -486,7 +482,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #eee;
 }
 .header-button {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .header-img {
   margin-top: 35px;

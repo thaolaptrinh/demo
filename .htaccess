@@ -1,0 +1,24 @@
+# Bảo vệ file dùng .htaccess
+
+<files .htaccess="">
+order allow,deny
+deny from all
+</files>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^auth/login$ profile/login.php [L]
+RewriteRule ^auth/register$ profile/register.php [L]
+
+
+
+# Error
+
+# ErrorDocument 401 /error/401.php
+# ErrorDocument 403 /error/403.php
+# ErrorDocument 404 /errors/404.php
+# ErrorDocument 500 /error/500.php
